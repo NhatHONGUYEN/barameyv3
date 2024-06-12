@@ -12,7 +12,7 @@ export default function Introduction() {
         ></video>
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="absolute inset-0 flex flex-col py-11 items-center text-center text-white justify-center">
-          <h1 className="text-2xl mx-20  py-4 uppercase font-extrabold font-gagalin">
+          <h1 className="text-2xl mx-16  py-4 uppercase font-extrabold font-gagalin">
             Traiteur spécialisé en plats cambodgiens et thaï
           </h1>
           <p className="py-2 mx-10">

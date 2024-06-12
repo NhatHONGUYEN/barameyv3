@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 export default function FormContact() {
   return (
     <div className="py-10 ">
-      <div className="mx-14 p-6  bg-white rounded-md border-2  shadow-xl">
+      <div className="mx-8 p-6  bg-white rounded-md border-2  shadow-xl">
         <h2 className="text-2xl font-semibold mb-4 uppercase">
           Contacter Nous
         </h2>

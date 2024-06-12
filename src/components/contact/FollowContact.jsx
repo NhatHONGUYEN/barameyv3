@@ -3,8 +3,8 @@ import { TiSocialFacebook } from "react-icons/ti";
 
 export default function FollowContact() {
   return (
-    <div className="mx-14 p-6 text-white text-center mb-12  bg-black rounded-sm ">
-      <h1 className="text-3xl mx-6 font-bold py-6">
+    <div className="mx-8 p-6 text-white text-center mb-12  bg-black rounded-sm ">
+      <h1 className="text-3xl mx-4 font-bold py-6">
         Suivez le BARAMEY traiteur
       </h1>
       <p>
