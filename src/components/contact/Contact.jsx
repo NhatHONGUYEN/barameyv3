@@ -2,6 +2,7 @@ import FormContact from "../contact/FormContact.jsx";
 import HeaderContact from "./HeaderContact.jsx";
 import FollowContact from "./FollowContact.jsx";
 import Footer from "../Footer.jsx";
+import Copyright from "../Copyright.jsx";
 
 export default function Contact() {
   return (
@@ -11,6 +12,7 @@ export default function Contact() {
         <FormContact />
         <FollowContact />
         <Footer />
+        <Copyright />
       </div>
     </div>
   );
