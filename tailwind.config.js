@@ -6,7 +6,10 @@ export default {
       colors: {
         "baramey-orange": "#F7A11F",
       },
+      fontFamily: {
+        gagalin: ["Gagalin", "sans-serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
