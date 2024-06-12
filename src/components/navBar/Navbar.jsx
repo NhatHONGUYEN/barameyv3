@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="h-16 w-full z-50 flex justify-between items-center text-white bg-black p-4">
       <Link to={"/home"}>
         <img
-          className="object-contain  h-12 w-full"
+          className="object-contain  h-10 w-full"
           src="/BARAMEY-LOGO_YELLOW.png"
           alt="logo_baramey"
         />
