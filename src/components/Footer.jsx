@@ -1,5 +1,3 @@
-import { BsCash } from "react-icons/bs";
-
 export default function Footer() {
   return (
     <div className="w-full h-full  text-center text-white bg-black">
