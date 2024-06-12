@@ -24,12 +24,14 @@ export default function Presentation() {
           CORIANDRE, BASILIC, CACAHOUÈTES, OIGNONS FRITS, SAUCE MAISON.
         </p>
         <div className="py-10">
-          <Link
-            to={"/menu"}
+          <a
+            href="https://cdn.website.dish.co/media/a9/ce/7590335/Menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="py-4 px-4 border border-white rounded-none uppercase transition-all duration-300 hover:backdrop-filter hover:backdrop-blur-sm hover:bg-white/20 hover:border-transparent"
           >
             décrouvrez la menu
-          </Link>
+          </a>
         </div>
       </div>
     </div>

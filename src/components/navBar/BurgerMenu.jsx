@@ -14,9 +14,14 @@ export default function BurgerMenu() {
         <Link to={"/home"} className="py-2">
           Acceuil
         </Link>
-        <Link to={"/menu"} className="py-2">
+        <a
+          href="https://cdn.website.dish.co/media/a9/ce/7590335/Menu.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="py-2"
+        >
           Menu
-        </Link>
+        </a>
         <Link to={"/contact"} className="py-2">
           Contact & accès
         </Link>
