@@ -2,10 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
-import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Contact from "./components/Contact";
 import Order from "./components/Order";
+import Navbar from "./components/navBar/Navbar";
 
 function App() {
   return (
