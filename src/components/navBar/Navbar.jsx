@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="h-16 w-full flex justify-between items-center text-white bg-black p-4">
+    <div className="h-16 w-full z-50 flex justify-between items-center text-white bg-black p-4">
       <Link to={"/home"}>
         <img
           className="object-contain  h-12 w-full"
