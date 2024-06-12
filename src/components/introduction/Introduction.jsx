@@ -1,12 +1,15 @@
 export default function Introduction() {
   return (
     <div className="relative">
-      <div className="relative">
-        <img
-          className="w-full"
-          src="/samoussas au boeuf.jpg"
-          alt="samoussas au boeuf.jpg"
-        />
+      <div className="relative ">
+        <video
+          src="/intro-rice.mp4"
+          muted
+          autoPlay
+          loop
+          controls={false}
+          className="object-cover w-full h-[500px]"
+        ></video>
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="absolute inset-0 flex flex-col py-11 items-center text-center mx-10 text-white justify-center">
           <h1 className="text-xl py-2 uppercase font-extrabold font-gagalin">
