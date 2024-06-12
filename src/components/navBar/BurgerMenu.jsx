@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function BurgerMenu() {
   return (
     <motion.div
-      className="absolute z-50 top-16 right-0 w-2/4 h-52 bg-black flex text-white border-t-4"
+      className="absolute z-50 top-16 right-0 w-2/4 h-48 bg-black flex text-white border-t-4"
       initial={{ x: "100%" }}
       animate={{ x: 0 }}
       exit={{ x: "100%" }}
@@ -19,9 +19,6 @@ export default function BurgerMenu() {
         </Link>
         <Link to={"/contact"} className="py-2">
           Contact & accès
-        </Link>
-        <Link to={"/order"} className="py-2">
-          Commander
         </Link>
       </ul>
     </motion.div>

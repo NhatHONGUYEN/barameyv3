@@ -1,3 +1,4 @@
+import Copyright from "../components/Copyright";
 import Description from "../components/Description";
 import Footer from "../components/Footer";
 import Presentation from "../components/Presentation";
@@ -10,6 +11,7 @@ export default function Home() {
       <Presentation />
       <Description />
       <Footer />
+      <Copyright />
     </>
   );
 }

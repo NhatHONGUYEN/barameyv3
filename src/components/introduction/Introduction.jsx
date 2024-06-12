@@ -17,9 +17,6 @@ export default function Introduction() {
             culinaire dans le sud-est asiatique grâce à un savoir-faire
             familiale et artisanale !
           </p>
-          <button className="py-4 px-4 border border-white rounded-none uppercase transition-all duration-300 hover:backdrop-filter hover:backdrop-blur-sm hover:bg-white/20 hover:border-transparent">
-            Découvrez le restaurant
-          </button>
         </div>
       </div>
     </div>
