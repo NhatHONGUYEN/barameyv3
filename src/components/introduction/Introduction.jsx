@@ -7,7 +7,7 @@ export default function Introduction() {
           src="/samoussas au boeuf.jpg"
           alt="samoussas au boeuf.jpg"
         />
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="absolute inset-0 flex flex-col py-11 items-center text-center mx-10 text-white justify-center">
           <h1 className="text-xl py-2 uppercase font-extrabold font-gagalin">
             Traiteur spécialisé en plats cambodgiens et thaï

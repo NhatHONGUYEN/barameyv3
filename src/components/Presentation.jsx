@@ -13,7 +13,7 @@ export default function Presentation() {
 
         <div className="relative py-10">
           <img src="/boeuf-sansbg.png" alt="boeuf-sansbg" />
-          <p className="absolute top-14 text-2xl bg-black/90 shadow-2xl rounded-full p-6 -rotate-12 left-20  font-bold font-gagalin">
+          <p className="absolute top-14 text-2xl bg-black/90 shadow-2xl rounded-full p-6 -rotate-12 left-14  font-bold font-gagalin">
             Bobun
             <br />
             10€50
