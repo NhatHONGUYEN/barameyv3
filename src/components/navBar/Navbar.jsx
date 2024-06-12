@@ -12,7 +12,7 @@ export default function Navbar() {
       <Link to={"/home"}>
         <img
           className="object-contain  h-12 w-full"
-          src="../../public/BARAMEY-LOGO_YELLOW.png"
+          src="/BARAMEY-LOGO_YELLOW.png"
           alt="logo_baramey"
         />
       </Link>
