@@ -23,8 +23,8 @@ export default function Presentation() {
                 Boeuf <br /> Piquant <br /> 13€90
               </p>
             </div>
-            <div className="xl:w-1/2 xl:pl-10 xl:mx-32 xl:py-24 mx-9 md:mx-28">
-              <p className="text-xl pb-7 md:text-2xl lg:text-3xl">
+            <div className="xl:w-1/2 2xl:w-1/3 xl:pl-10 xl:mx-32 xl:py-24 mx-9 md:mx-28">
+              <p className="text-xl 2xl:text-4xl pb-7 md:text-2xl lg:text-3xl">
                 "Notre plat de bœuf épicé est un délice grillé à la perfection,
                 mariné dans un mélange épicé de gousses d'ail, de piments et de
                 jus de citron vert. Servi avec une salade de légumes frais et
