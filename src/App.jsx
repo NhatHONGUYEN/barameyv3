@@ -13,8 +13,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <AnimatePresence>
+        <Navbar />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
+import Banner from "../Banner";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -20,6 +21,7 @@ export default function Navbar() {
         <Hamburger toggled={isOpen} toggle={setOpen} />
         <AnimatePresence>{isOpen && <BurgerMenu />}</AnimatePresence>
       </div>
+      <Banner />
     </div>
   );
 }
