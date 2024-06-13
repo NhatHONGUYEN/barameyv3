@@ -18,17 +18,14 @@ export default function Footer() {
           <div>
             <h1 className="text-2xl font-bold uppercase ">Horaires</h1>
             <div className="py-4">
-              <p className="font-bold">Du lundi au vendredi: </p>
+              <p className="font-bold">Du lundi au vendredi </p>
               <p>
-                <span className="underline">Midi</span> : de 11:30h à 14h
+                De 11:30 à 14:00 <br />
+                et De 18h à 21h
               </p>
-              <p>
-                <span className="underline">Soir</span> : de 18h à 21h
-              </p>
-              <p className="font-bold">Le samedi: </p>
-              <p>
-                <span className="underline">Midi</span> : de 11:30h à 14h
-              </p>
+
+              <p className="font-bold pt-6">Le samedi </p>
+              <p>De 11:30 à 14:00</p>
               <p className="font-bold">Fermé le dimanche</p>
             </div>
           </div>
