@@ -1,7 +1,38 @@
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import FadeInOut from "../../animation/FadeInOut";
+import { useState } from "react";
+import FadeInOut from "../../../animation/FadeInOut";
+import FormRightSide from "./FormRightSide";
+import emailjs from "emailjs-com";
 
 export default function FormContact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await emailjs.send(
+        "service_ltf7rwn",
+        "template_zno7de9",
+        formData,
+        "7yg3SA_dmgQ7G_1bD"
+      );
+      alert("Email sent successfully");
+      // Reset the form fields
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error(error);
+      alert("Error sending email");
+    }
+  };
+
   return (
     <div className="py-10 ">
       <FadeInOut>
@@ -9,26 +40,8 @@ export default function FormContact() {
           <h2 className="text-2xl font-semibold mb-4 uppercase">
             Contacter Nous
           </h2>
-          <form>
-            <div className="">
-              <div className="flex py-4">
-                <FaMapMarkerAlt className="text-2xl text-baramey-orange " />
-                <p className="pl-4">
-                  <p className="text-2xl ">Adresse </p>
-                  <br />
-                  <p className="text-lg">
-                    29, AV WINSTON CHURCHILL <br /> 27400 LOUVIERS France
-                  </p>
-                </p>
-              </div>
-              <div className="flex py-4">
-                <FaPhoneAlt className="text-2xl text-baramey-orange " />
-                <p className="pl-4">
-                  <p className="text-2xl  ">Téléphone </p>
-                  <br /> <p className="text-lg font-bold">09 77 85 37 67</p>
-                </p>
-              </div>
-            </div>
+          <form onSubmit={handleSubmit}>
+            <FormRightSide />
 
             <div className="mb-4 pt-14">
               <input
@@ -36,6 +49,8 @@ export default function FormContact() {
                 id="name"
                 name="name"
                 placeholder="Nom"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
                 required
               />
@@ -46,6 +61,8 @@ export default function FormContact() {
                 id="email"
                 name="email"
                 placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
                 required
               />
@@ -56,6 +73,8 @@ export default function FormContact() {
                 name="message"
                 rows="4"
                 placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
                 required
               ></textarea>

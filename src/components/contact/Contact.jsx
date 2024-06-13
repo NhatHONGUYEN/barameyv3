@@ -1,4 +1,4 @@
-import FormContact from "../contact/FormContact.jsx";
+import FormContact from "./form/FormContact.jsx";
 import HeaderContact from "./HeaderContact.jsx";
 import FollowContact from "./FollowContact.jsx";
 import Footer from "../Footer.jsx";
