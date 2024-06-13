@@ -24,7 +24,7 @@ export default function Presentation() {
             "Notre plat de bœuf épicé est un délice grillé à la perfection,
             mariné dans un mélange épicé de gousses d'ail, de piments et de jus
             de citron vert. Servi avec une salade de légumes frais et une sauce
-            crémeuse, c'est le choix idéal pour les amateurs de piquant."
+            crémeuse, c'est le choix idéal pour les amateur de piments."
           </p>
           <div className="py-10">
             <a
@@ -33,7 +33,7 @@ export default function Presentation() {
               rel="noopener noreferrer"
               className="py-4 px-4 border border-white rounded-none uppercase transition-all duration-300 hover:backdrop-filter hover:backdrop-blur-sm hover:bg-white/20 hover:border-transparent"
             >
-              décrouvrez la menu
+              découvrez le menu
             </a>
           </div>
         </div>
