@@ -2,6 +2,9 @@ import { useState } from "react";
 import FadeInOut from "../../../animation/FadeInOut";
 import FormRightSide from "./FormRightSide";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Bounce } from "react-toastify";
 
 export default function FormContact() {
   const [formData, setFormData] = useState({
@@ -24,12 +27,23 @@ export default function FormContact() {
         formData,
         "7yg3SA_dmgQ7G_1bD"
       );
-      alert("Email sent successfully");
+
       // Reset the form fields
       setFormData({ name: "", email: "", message: "" });
+      toast.success("Message envoyé avec succès!", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     } catch (error) {
       console.error(error);
-      alert("Error sending email");
+      toast.error("Error sending email");
     }
   };
 
@@ -90,6 +104,19 @@ export default function FormContact() {
           </form>
         </div>
       </FadeInOut>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   );
 }
