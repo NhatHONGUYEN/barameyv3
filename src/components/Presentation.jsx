@@ -14,16 +14,17 @@ export default function Presentation() {
 
           <div className="relative py-10">
             <img src="/boeuf-sansbg.png" alt="boeuf-sansbg" />
-            <p className="absolute top-14 text-2xl bg-black/90 shadow-2xl rounded-full p-6 -rotate-12 left-14  font-bold font-gagalin">
-              Bobun
+            <p className="absolute top-14 text-xl bg-black/90 shadow-2xl rounded-full p-6 -rotate-12 left-14  font-bold font-gagalin">
+              Boeuf <br /> Piquant
               <br />
-              10€50
+              13€90
             </p>
           </div>
-          <p className="text-xl pb-7 font-semibold  mx-20">
-            VERMICELLES DE RIZ, BOEUF SAUTÉ AU CURRY JAUNE, SOJA, SALADE,
-            MENTHE, CORIANDRE, BASILIC, CACAHOUÈTES, OIGNONS FRITS, SAUCE
-            MAISON.
+          <p className="text-xl pb-7   mx-16">
+            "Notre plat de bœuf épicé est un délice grillé à la perfection,
+            mariné dans un mélange épicé de gousses d'ail, de piments et de jus
+            de citron vert. Servi avec une salade de légumes frais et une sauce
+            crémeuse, c'est le choix idéal pour les amateurs de piquant."
           </p>
           <div className="py-10">
             <a
