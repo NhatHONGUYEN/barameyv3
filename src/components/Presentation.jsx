@@ -5,7 +5,7 @@ export default function Presentation() {
     <div>
       <FadeInOut>
         <div className="w-full h-full justify-center items-center text-center text-white bg-baramey-orange">
-          <div className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
+          <div className="text-3xl md:text-4xl lg:text-5xl ">
             <h1 className="font-extrabold py-10 lg:py-20 ">Dégustez!</h1>
             <p className="uppercase font-semibold">
               spécialité <br /> cambodgienne
