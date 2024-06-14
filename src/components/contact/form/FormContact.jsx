@@ -50,15 +50,15 @@ export default function FormContact() {
     <div className="py-10 lg:w-2/3 lg:mx-auto xl:w-2/4  ">
       <FadeInOut>
         <div className="mx-8 p-6  bg-white rounded-md border-2  shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4 uppercase">
+          <h2 className="text-2xl 2xl:text-4xl 2xl:py-10 font-semibold mb-4 uppercase">
             Contactez Nous
           </h2>
           <form onSubmit={handleSubmit} className="md:grid grid-cols-2 gap-4">
             <div className="grid-cols-1">
               <FormRightSide />
             </div>
-            <div className="grid-cols-1">
-              <div className="mb-4">
+            <div className="grid-cols-1 2xl:text-2xl">
+              <div className="mb-4 ">
                 <input
                   type="text"
                   id="name"

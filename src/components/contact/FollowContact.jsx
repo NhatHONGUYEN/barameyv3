@@ -5,11 +5,11 @@ import FadeInOut from "../../animation/FadeInOut";
 export default function FollowContact() {
   return (
     <FadeInOut>
-      <div className="mx-8 p-6 text-white text-center mb-12  bg-black rounded-sm ">
+      <div className="mx-8 p-6 text-white text-center mb-12  bg-black rounded-sm lg:w-3/5 lg:mx-auto xl:w-[46%] 2xl:w-[47%] ">
         <h1 className="text-3xl mx-4 font-bold py-6">
           Suivez le BARAMEY traiteur
         </h1>
-        <p>
+        <p className="2xl:text-2xl 2xl:mx-40 2xl:py-10">
           Nous sommes présent sur les réseaux sociaux pour partager avec vous
           nos recettes, photos de plats, actus et autres bons plans. N’hésitez
           pas à partagez avec vos amis .
