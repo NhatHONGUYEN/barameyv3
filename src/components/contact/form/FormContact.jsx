@@ -28,7 +28,6 @@ export default function FormContact() {
         "7yg3SA_dmgQ7G_1bD"
       );
 
-      // Reset the form fields
       setFormData({ name: "", email: "", message: "" });
       toast.success("Message envoyé avec succès!", {
         position: "bottom-right",
@@ -48,58 +47,61 @@ export default function FormContact() {
   };
 
   return (
-    <div className="py-10 ">
+    <div className="py-10 lg:w-2/3 lg:mx-auto xl:w-2/4  ">
       <FadeInOut>
         <div className="mx-8 p-6  bg-white rounded-md border-2  shadow-xl">
           <h2 className="text-2xl font-semibold mb-4 uppercase">
             Contactez Nous
           </h2>
-          <form onSubmit={handleSubmit}>
-            <FormRightSide />
-
-            <div className="mb-4 pt-14">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nom"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
-                required
-              />
+          <form onSubmit={handleSubmit} className="md:grid grid-cols-2 gap-4">
+            <div className="grid-cols-1">
+              <FormRightSide />
             </div>
-            <div className="mb-4">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Message"
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
-                required
-              ></textarea>
-            </div>
-            <div className="text-right">
-              <button
-                type="submit"
-                className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600 uppercase"
-              >
-                envoyer
-              </button>
+            <div className="grid-cols-1">
+              <div className="mb-4">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nom"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 bg-gray-100"
+                  required
+                ></textarea>
+              </div>
+              <div className="text-right">
+                <button
+                  type="submit"
+                  className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600 uppercase"
+                >
+                  envoyer
+                </button>
+              </div>
             </div>
           </form>
         </div>
