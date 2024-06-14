@@ -17,9 +17,25 @@ export default function Navbar() {
           alt="logo_baramey"
         />
       </Link>
-      <div>
+      <div className="lg:hidden">
         <Hamburger toggled={isOpen} toggle={setOpen} />
         <AnimatePresence>{isOpen && <BurgerMenu />}</AnimatePresence>
+      </div>
+      <div>
+        <Link to={"/home"} className="ml-4">
+          Acceuil
+        </Link>
+        <a
+          href="https://cdn.website.dish.co/media/a9/ce/7590335/Menu.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-4"
+        >
+          Menu
+        </a>
+        <Link to={"/contact"} className="ml-4">
+          Contact & accès
+        </Link>
       </div>
       <Banner />
     </div>
