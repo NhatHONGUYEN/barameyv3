@@ -6,14 +6,14 @@ export default function Presentation() {
       <FadeInOut>
         <div className="w-full h-full justify-center items-center text-center text-white bg-baramey-orange">
           <div className="text-3xl md:text-4xl lg:text-5xl ">
-            <h1 className="font-extrabold py-10 lg:py-20 ">Dégustez!</h1>
-            <p className="uppercase font-semibold">
+            <h1 className="font-extrabold py-10 lg:py-20  ">Dégustez!</h1>
+            <p className="uppercase font-semibold 2xl:pb-16">
               spécialité <br /> cambodgienne
             </p>
           </div>
 
-          <div className="flex flex-col xl:flex-row justify-center items-center">
-            <div className="relative py-10 xl:w-1/2 2xl:mx-40">
+          <div className="flex flex-col xl:flex-row justify-center items-center 2xl:mx-[10%]">
+            <div className="relative py-10 xl:w-1/3 2xl:mx-auto">
               <img
                 className="w-full"
                 src="/boeuf-sansbg.png"
@@ -24,7 +24,7 @@ export default function Presentation() {
               </p>
             </div>
             <div className="xl:w-1/2 2xl:w-1/3 xl:pl-10 xl:mx-32 xl:py-24 mx-9 md:mx-28">
-              <p className="text-xl 2xl:text-4xl pb-7 md:text-2xl lg:text-3xl">
+              <p className="text-xl 2xl:text-4xl pb-7 md:text-2xl lg:text-3xl text-left">
                 "Notre plat de bœuf épicé est un délice grillé à la perfection,
                 mariné dans un mélange épicé de gousses d'ail, de piments et de
                 jus de citron vert. Servi avec une salade de légumes frais et
